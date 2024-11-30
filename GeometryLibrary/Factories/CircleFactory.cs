@@ -18,7 +18,7 @@ namespace GeometryLibrary.Factories
         /// Конструктор для создания фабрики.
         /// </summary>
         /// <param name="radius">Радиус.</param>
-        public CircleFactory(double radius)
+        public CircleFactory(double radius) 
         {
             _radius = radius;
         }

@@ -34,7 +34,7 @@ namespace GeometryLibrary.Factories
             if (_sideA <= 0 || _sideB <= 0 || _sideC <= 0)
                 throw new InvalidShapeException("Стороны должны быть положительными числами.");
 
-            if (_sideA + _sideB <= _sideC || _sideA + _sideB <= _sideC || _sideB + _sideB <= _sideC)
+            if (_sideA + _sideB <= _sideC || _sideA + _sideC <= _sideB || _sideB + _sideC <= _sideA)
                 throw new InvalidShapeException("Треугольник с такими сторонами не существует.");
 
             var triangle = new Triangle(_sideA, _sideB, _sideC);
