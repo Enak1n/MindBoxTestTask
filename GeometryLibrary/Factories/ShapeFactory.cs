@@ -11,6 +11,6 @@ namespace GeometryLibrary.Factories
         /// Метод создающий фигуру.
         /// </summary>
         /// <returns>Возвращает фигуру реализующую интерфейс IShape.</returns>
-        public abstract IShape CreatreShape();
+        public abstract IShape CreateShape();
     }
 }

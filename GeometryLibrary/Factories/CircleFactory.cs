@@ -24,7 +24,7 @@ namespace GeometryLibrary.Factories
         }
 
         ///<inheritdoc/>
-        public override IShape CreatreShape()
+        public override IShape CreateShape()
         {
             if (_radius <= 0)
                 throw new InvalidShapeException("Радиус должен быть положительным числом.");

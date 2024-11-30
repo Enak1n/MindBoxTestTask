@@ -29,7 +29,7 @@ namespace GeometryLibrary.Factories
         }
 
         ///<inheritdoc/>
-        public override IShape CreatreShape()
+        public override IShape CreateShape()
         {
             if (_sideA <= 0 || _sideB <= 0 || _sideC <= 0)
                 throw new InvalidShapeException("Стороны должны быть положительными числами.");
