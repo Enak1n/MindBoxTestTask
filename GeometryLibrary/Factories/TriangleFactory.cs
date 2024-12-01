@@ -4,6 +4,9 @@ using GeometryLibrary.Shapes;
 
 namespace GeometryLibrary.Factories
 {
+    /// <summary>
+    /// Конкретная фабрика для создания объектов типа треугольник.
+    /// </summary>
     public class TriangleFactory : ShapeFactory
     {
         /// <summary>
@@ -21,6 +24,12 @@ namespace GeometryLibrary.Factories
         /// </summary>
         private readonly double _sideC;
 
+        /// <summary>
+        /// Конструкторо для создания объекта.
+        /// </summary>
+        /// <param name="sideA">Сторона 1.</param>
+        /// <param name="sideB">Сторона 2.</param>
+        /// <param name="sideC">Сторона 3.</param>
         public TriangleFactory(double sideA, double sideB, double sideC)
         {
             _sideA = sideA;
